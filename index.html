@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"
+    />
+
+    <title>BuDAO.Homes</title>
+
+    <link
+      rel="apple-touch-icon"
+      sizes="57x57"
+      href="dist/apple-icon-57x57.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="60x60"
+      href="dist/apple-icon-60x60.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="72x72"
+      href="dist/apple-icon-72x72.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="76x76"
+      href="dist/apple-icon-76x76.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="114x114"
+      href="dist/apple-icon-114x114.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="120x120"
+      href="dist/apple-icon-120x120.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="144x144"
+      href="dist/apple-icon-144x144.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="152x152"
+      href="dist/apple-icon-152x152.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="dist/apple-icon-180x180.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="192x192"
+      href="dist/android-icon-192x192.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="dist/favicon-32x32.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="96x96"
+      href="dist/favicon-96x96.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="dist/favicon-16x16.png"
+    />
+    <link rel="manifest" href="dist/manifest.json" />
+    <meta name="msapplication-TileColor" content="#ffffff" />
+    <meta name="msapplication-TileImage" content="dist/ms-icon-144x144.png" />
+    <meta name="theme-color" content="#0f8997" />
+
+    <link rel="stylesheet" href="dist/reset.css" />
+    <link rel="stylesheet" href="dist/reveal.css" />
+    <link rel="stylesheet" href="dist/theme/black.css" />
+
+    <link rel="stylesheet" href="plugin/highlight/monokai.css" />
+    <style>
+      .cards {
+        display: grid;
+        justify-items: center;
+        grid-auto-flow: column;
+        margin-top: 20px;
+        width: 100%;
+      }
+      .card {
+        background: radial-gradient(#fff, #0f8997, #0f8997);
+        padding: 45px;
+        border: 2px #fff solid;
+        border-radius: 30px;
+        font-size: 100px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="reveal">
+      <div class="slides">
+        <section>
+          <section
+            data-background-gradient="linear-gradient(to bottom, #17b2c3, #283b95)"
+          >
+            <div class="r-fit-text">BuDAO.Homes</div>
+            <div class="r-fit-text">building the future</div>
+          </section>
+        </section>
+      </div>
+    </div>
+
+    <script src="dist/reveal.js"></script>
+    <script src="plugin/notes/notes.js"></script>
+    <script src="plugin/markdown/markdown.js"></script>
+    <script src="plugin/highlight/highlight.js"></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/3.2.0/chart.min.js"></script>
+    <script src="plugin/chart/plugin.js"></script>
+    <script>
+      Reveal.initialize({
+        hash: true,
+        center: true,
+        mouseWheel: true,
+        chart: {
+          defaults: {
+            color: "lightgray", // color of labels
+            scale: {
+              beginAtZero: true,
+              ticks: { stepSize: 1 },
+              grid: { color: "lightgray" }, // color of grid lines
+            },
+          },
+          line: {
+            borderColor: [
+              "rgba(20,220,220,.8)",
+              "rgba(220,120,120,.8)",
+              "rgba(20,120,220,.8)",
+            ],
+            borderDash: [
+              [5, 10],
+              [0, 0],
+            ],
+          },
+          bar: {
+            backgroundColor: [
+              "rgba(20,220,220,.8)",
+              "rgba(220,120,120,.8)",
+              "rgba(20,120,220,.8)",
+            ],
+          },
+          pie: {
+            backgroundColor: [
+              [
+                "rgba(0,0,0,.8)",
+                "rgba(220,20,20,.8)",
+                "rgba(20,220,20,.8)",
+                "rgba(220,220,20,.8)",
+                "rgba(20,20,220,.8)",
+              ],
+            ],
+          },
+          radar: {
+            borderColor: [
+              "rgba(20,220,220,.8)",
+              "rgba(220,120,120,.8)",
+              "rgba(20,120,220,.8)",
+            ],
+          },
+        },
+        plugins: [RevealMarkdown, RevealHighlight, RevealNotes, RevealChart],
+      });
+    </script>
+  </body>
+</html>
