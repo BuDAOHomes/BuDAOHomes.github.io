@@ -1,5 +1,5 @@
-# POBUT.ME
+# BuDAO.Homes
 
-### philanthropic yield farming protocol
+### building the future
 
 `Presentation by reveal.js`
